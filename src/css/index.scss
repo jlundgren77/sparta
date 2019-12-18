@@ -1,204 +1,225 @@
 @import 'normalize';
 
 @font-face {
-  font-family: 'Springville';
-  src: url('../fonts/Springville-Regular3.otf') format('opentype');
+    font-family: 'Springville';
+    src: url('../fonts/Springville-Regular3.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'CaslonPro';
+    font-family: 'CaslonPro';
 
-  src: url('../fonts/ACaslonPro-Regular.otf') format('opentype');
+    src: url('../fonts/ACaslonPro-Regular.otf') format('opentype');
 }
 
 h1 {
-  font-size: 60px;
-  line-height: 1;
-  font-family: 'Springville', serif;
+    font-size: 60px;
+    line-height: 1;
+    font-family: 'Springville', serif;
 
-  @media screen and (max-width: 925px) {
-    font-size: 35px;
-  }
+    @media screen and (max-width: 925px) {
+        font-size: 35px;
+    }
 
-  @media screen and (max-width: 600px) {
-    font-size: 25px;
-  }
+    @media screen and (max-width: 600px) {
+        font-size: 25px;
+    }
 }
 
 h2,
 p,
 a {
-  font-family: 'CaslonPro';
+    font-family: 'CaslonPro';
 }
+
 a {
-  color: #767676;
-  text-decoration: none;
-  &:hover {
-    cursor: pointer;
-  }
+    color: #767676;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
+
 .underline {
-  border-bottom: 1px solid rgb(19, 19, 19);
-  padding: 2px;
+    border-bottom: 1px solid rgb(19, 19, 19);
+    padding: 2px;
 }
 
 body {
-  color: #fff;
+    color: #fff;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-  min-height: 50px;
-  background: #fff;
-  align-items: center;
-  display: flex;
-  display: -ms-flexbox;
-  justify-content: space-between;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    min-height: 50px;
+    background: #fff;
+    align-items: center;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    z-index: 1000;
 
-  @media screen and (max-width: 900px) {
-    justify-content: center;
-    padding-top: 25px;
-  }
-
-  .logo {
-    max-width: 196px;
-    height: auto;
-    &:hover {
-      cursor: pointer;
-    }
-    @media screen and (max-width: 425px) {
-      width: 125px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .header-left {
-      margin: 0 120px;
+    @media screen and (max-width: 900px) {
+        justify-content: center;
+        padding-top: 25px;
     }
 
-    .header-right {
-      margin: 0 120px;
-    }
-  }
+    .logo {
+        max-width: 196px;
+        height: auto;
 
-  @media screen and (max-width: 625px) {
-    .header-left,
-    .header-right {
-      margin: 0 25px;
-    }
-  }
+        &:hover {
+            cursor: pointer;
+        }
 
-  @media screen and (max-width: 375px) {
-    height: 50px;
-  }
+        @media screen and (max-width: 425px) {
+            width: 125px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .header-left {
+            margin: 0 120px;
+        }
+
+        .header-right {
+            margin: 0 120px;
+        }
+    }
+
+    @media screen and (max-width: 625px) {
+
+        .header-left,
+        .header-right {
+            margin: 0 25px;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        height: 50px;
+
+        .header-right,
+        .header-left {
+            margin: 0 10px;
+        }
+    }
 }
 
+
+
 .header-left {
-  margin: 50px 175px;
+    margin: 50px 175px;
 }
 
 .header-right {
-  display: flex;
-  display: -ms-flexbox;
-  justify-content: center;
-  align-items: center;
-  margin: 0 144px;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    margin: 0 144px;
 
-  p,
-  a {
-    margin-right: 20px;
-    color: #767676;
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-  }
+    p,
+    a {
+        margin-right: 20px;
+        color: #767676;
+        font-family: 'Arial', sans-serif;
+        font-size: 11px;
+    }
 }
 
 nav {
-  display: flex;
-  display: -ms-flexbox;
-  &:hover {
-    cursor: pointer;
-  }
-}
-.content {
-  position: absolute;
-  top: 130px;
+    display: flex;
+    display: -ms-flexbox;
 
-  margin: 0 auto;
+    &:hover {
+        cursor: pointer;
+    }
 }
+
+.content {
+    position: absolute;
+    top: 130px;
+
+    margin: 0 auto;
+}
+
 .hero {
-  position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
-  img {
-    width: 100%;
-  }
-  .awssld__bullets button {
-    background-color: rgb(225, 225, 225);
-    width: 10px;
-    height: 10px;
-  }
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+    }
+
+    .awssld__bullets button {
+        background-color: rgb(225, 225, 225);
+        width: 10px;
+        height: 10px;
+    }
 }
 
 .hero-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(36, 35, 35, 0.5);
-  z-index: 500;
-  top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 35, 35, 0.5);
+    z-index: 500;
+    top: 0;
 
-  h2 {
-    font-size: 30px;
-    line-height: 1;
-  }
+    h2 {
+        font-size: 30px;
+        line-height: 1;
+    }
 
-  p {
-    font-size: 18px;
-    line-height: 1.333;
-  }
+    p {
+        font-size: 18px;
+        line-height: 1.333;
+    }
 }
 
 .awssld__bullets button {
-  background-color: rgb(225, 225, 225);
-  width: 10px;
-  height: 10px;
+    background-color: rgb(225, 225, 225);
+    width: 10px;
+    height: 10px;
 }
 
 .hero-overlay-text {
-  position: absolute;
-  left: 10%;
-  bottom: 10%;
-  @media screen and (max-width: 350px) {
-    bottom: 10px;
-  }
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
 
-  h2 {
-    @media screen and (max-width: 500px) {
-      font-size: 16px;
+    @media screen and (max-width: 350px) {
+        bottom: 10px;
     }
-  }
-  p {
-    @media screen and (max-width: 500px) {
-      font-size: 12px;
+
+    h2 {
+        @media screen and (max-width: 500px) {
+            font-size: 16px;
+        }
     }
-  }
+
+    p {
+        @media screen and (max-width: 500px) {
+            font-size: 12px;
+        }
+    }
 }
+
 .card img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 footer {
-  text-align: center;
-  font-size: 11px;
-  font-family: 'Arial';
-  color: rgb(19, 19, 19);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 2.182;
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Arial';
+    color: rgb(19, 19, 19);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.182;
 }
